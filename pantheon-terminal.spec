@@ -1,7 +1,7 @@
 Summary:	Pantheon Terminal Emulator
 Name:		pantheon-terminal
 Version:	0.1
-Release:	0.1
+Release:	0.2
 License:	GPL v3
 Group:		X11/Applications
 Source0:	https://launchpad.net/pantheon-terminal/0.x/0.1/+download/%{name}-%{version}.tar.gz
@@ -40,6 +40,8 @@ cd build
 rm -rf $RPM_BUILD_ROOT
 %{__make} install -C build \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/sma
 
 %find_lang %{name}
 
