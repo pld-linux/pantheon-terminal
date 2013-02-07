@@ -8,12 +8,14 @@ Source0:	https://launchpad.net/pantheon-terminal/0.x/0.1/+download/%{name}-%{ver
 # Source0-md5:	868c63b826ab7e03236297e15e6c2aa8
 URL:		https://launchpad.net/pantheon-terminal
 BuildRequires:	cmake
+BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
 BuildRequires:	granite-devel
 BuildRequires:	gtk+3-devel
 BuildRequires:	libnotify-devel
 BuildRequires:	pkgconfig
 BuildRequires:	vala >= 0.10.0
+BuildRequires:	vala-libgee0.6
 BuildRequires:	vte-devel
 Requires:	desktop-file-utils
 Requires:	glib2 >= 1:2.26.0
